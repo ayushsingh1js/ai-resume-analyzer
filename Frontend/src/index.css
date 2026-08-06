@@ -1,0 +1,77 @@
+@import "tailwindcss";
+body {
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    #5c2600 0%,
+    #2a1000 30%,
+    #0d0d0d 60%,
+    #000000 100%
+  );
+
+  min-height: 100vh;
+    display: flex;             
+  justify-content: center;    
+  align-items: center; 
+}
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: whitesmoke;
+}
+.auth{
+  background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color:whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 32px;
+  flex-direction:column;
+  font-size: large;
+  gap:10px;
+}
+.mainheading{
+  font-size: xx-large;
+  align-self: center;
+  font-weight: 700;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+a{
+color: #c0392b;
+text-decoration: none;
+}
+.inputs input{
+  background: rgba(255, 255, 255, 0.08);
+  color: whitesmoke;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius:8px;
+  min-width: 320px;
+  font-size: 15px;
+  outline: none;
+}
+.submitbutton{
+  background: linear-gradient(135deg, #e8472a, #c0392b);
+  color: white;
+  padding: 5px 8px;
+  border-radius:8px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
